@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./index.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Escalação dos Jogadores</h1>
+    <hr>
+    
+    <h2>Escalar um jogador</h2>
+    <section id="escalar">
+        <label for="posicao">Posição:</label>
+        <input type="text" id="posicao">
+        <label for="jogador">Nome:</label>
+        <input type="text" id="jogador">
+        <label for="numero">Numero:</label>
+        <input type="text" id="numero">      
+        <button id="btnEscalar" onclick='addJogador()'>Escalar Jogador</button>  
+    </section>
+    
+    <h2>Remover um Jogador por numero</h2>
+    <section>
+        <label for="numeroRemover">Remover por nº:</label>
+        <input type="text" id="numeroRemover">     
+        <button id="btnRemover" onclick="removeJogador()">Remover Jogador</button> 
+    </section>
+
+    <h3>Jogadores</h3>
+    <ul id="time">
+    </ul>
+</body>
+</html>
